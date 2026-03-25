@@ -2,18 +2,18 @@
 
 UzMorphNN is a sequence-labeling morphological analyzer designed to process the highly agglutinative structure of the Uzbek language. Leveraging character-level neural network architectures trained on a massive 80K+ word standard corpus, the system achieves state-of-the-art stemming accuracy (>95%) while precisely extracting up to 16 grammatical features per token.
 
-## 🚀 Available Deployments
+##  Available Deployments
 This repository hosts the source inference code for the models. You can also access these pre-trained models via:
 
 - **PyPI (Python Package Index):** Install the models directly into your environment using `pip`.
-  - **BiLSTM (Baseline):** `pip install uzmorph-nn` 👉 [View on PyPI](https://pypi.org/project/uzmorph-nn/)
-  - **BiGRU (Optimal):** `pip install uzmorph-bigru` 👉 [View on PyPI](https://pypi.org/project/uzmorph-bigru/)
-  - **Transformer (Long Sequence):** `pip install uzmorph-transformer` 👉 [View on PyPI](https://pypi.org/project/uzmorph-transformer/)
+  - **BiLSTM (Baseline):** `pip install uzmorph-nn`  [View on PyPI](https://pypi.org/project/uzmorph-nn/)
+  - **BiGRU (Optimal):** `pip install uzmorph-bigru`  [View on PyPI](https://pypi.org/project/uzmorph-bigru/)
+  - **Transformer (Long Sequence):** `pip install uzmorph-transformer`  [View on PyPI](https://pypi.org/project/uzmorph-transformer/)
 
 - **Hugging Face Spaces:** Try the models directly via our interactive web interface!
   - [UzMorphNN Web Demo](https://huggingface.co/spaces/ulugbeksalaev/uzmorph_nn)
 
-## 🧠 Core Architectures
+##  Core Architectures
 We provide three natively trained neural architectures, optimized for different use cases. All models operate using the BIO (Beginning-Inside-Outside) character-level sequence labeling scheme:
 1. **BiGRU (`uzmorph_bigru`)**: The recommended model for deployment. Achieves the highest stemming precision (95.00%) with minimal inference latency.
 2. **BiLSTM (`uzmorph_bilstm`)**: An exceptionally strong recurrent baseline with 94.85% accuracy.
@@ -45,7 +45,7 @@ analyzer = uzmorph_bigru(
 )
 
 # 2. Analyze a complex Uzbek word
-word = "kitoblarimizdagilardanmi"
+word = "kitoblarimizdagi"
 result = analyzer.analyze(word)
 
 print(f"Word: {word}")
@@ -54,7 +54,7 @@ print(f"POS:  {result.pos}")
 print(f"Grammatical Features: {result.features}")
 ```
 
-## 🧩 The 16-Dimensional Feature Space
+##  The 16-Dimensional Feature Space
 The model does not just segment morphology; it completely reconstructs the linguistic profile based on the **Complete Set of Endings (CSE)** methodology. Extracted features map up to 16 grammatical attributes:
 
 1. `POS` (Part of Speech)

@@ -1,0 +1,1 @@
+from .uzmorph_transformer import uzmorph_transformer

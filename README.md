@@ -3,16 +3,15 @@
 UzMorphNN is a robust sequence-labeling morphological analyzer designed to process the highly agglutinative structure of the Uzbek language. Leveraging character-level neural network architectures trained on a massive 80K+ word standard corpus, the system achieves state-of-the-art stemming accuracy (>95%) while precisely extracting up to 16 grammatical features per token.
 
 ## 🚀 Available Deployments
-This repository hosts the source inference code for the models. You can also access these models via:
+This repository hosts the source inference code for the models. You can also access these pre-trained models via:
 
-- **PyPI (Python Package Index):** You can install the packaged version easily utilizing pip.
-  ```bash
-  pip install uzmorph-nn
-  ```
-- **Hugging Face Spaces:** Try the models directly via interactive web interfaces!
-  - [UzMorph BiLSTM Space](https://huggingface.co/spaces/) *(Insert your link here)*
-  - [UzMorph BiGRU Space](https://huggingface.co/spaces/) *(Insert your link here)*
-  - [UzMorph Transformer Space](https://huggingface.co/spaces/) *(Insert your link here)*
+- **PyPI (Python Package Index):** Install the models directly into your environment using `pip`.
+  - **BiLSTM (Baseline):** `pip install uzmorph-nn` 👉 [View on PyPI](https://pypi.org/project/uzmorph-nn/)
+  - **BiGRU (Optimal):** `pip install uzmorph-bigru` 👉 [View on PyPI](https://pypi.org/project/uzmorph-bigru/)
+  - **Transformer (Long Sequence):** `pip install uzmorph-transformer` 👉 [View on PyPI](https://pypi.org/project/uzmorph-transformer/)
+
+- **Hugging Face Spaces:** Try the models directly via our interactive web interface!
+  - [UzMorphNN Web Demo](https://huggingface.co/spaces/ulugbeksalaev/uzmorph_nn)
 
 ## 🧠 Core Architectures
 We provide three natively trained neural architectures, optimized for different use cases. All models operate using the BIO (Beginning-Inside-Outside) character-level sequence labeling scheme:

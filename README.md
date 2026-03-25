@@ -1,4 +1,4 @@
-# UzMorphNN: Uzbek Morphological Analyzer 🇺🇿
+# UzMorphNN: Uzbek Morphological Analyzer
 
 UzMorphNN is a robust sequence-labeling morphological analyzer designed to process the highly agglutinative structure of the Uzbek language. Leveraging character-level neural network architectures trained on a massive 80K+ word standard corpus, the system achieves state-of-the-art stemming accuracy (>95%) while precisely extracting up to 16 grammatical features per token.
 
